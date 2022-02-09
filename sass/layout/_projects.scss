@@ -1,14 +1,29 @@
 .projects {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 .filters-list {
   display: flex;
-  justify-content: center;
-  margin-bottom: 50px;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 40px;
+  @media screen and (min-width: 768px) {
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
 }
 .filters-list__item:not(:last-child) {
   margin-right: 8px;
+}
+.filters-list__item {
+  margin-top: 15px;
 }
 
 .filters-btn {
@@ -38,20 +53,30 @@
 }
 
 .projects-list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: calc(-1 * 30px);
-  margin-left: calc(-1 * 30px);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }
+
 .projects-list__item {
-  flex-basis: calc(100% / 3 - 30px);
-  margin-left: 30px;
-  margin-top: 30px;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    width: calc(100% / 2 - 30px);
+    margin-left: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: calc(100% / 3 - 30px);
+  }
   background-color: #ffffff;
 }
 
 .projects__card-content {
   flex-grow: 1;
+  width: 100%;
   padding: 20px 24px;
   border: 1px solid #eeeeee;
   border-top: none;
@@ -60,6 +85,9 @@
   color: var(--secondary-text-color);
   @include font(18px, 700, 2, 0.06em);
   margin-bottom: 4px;
+  @media screen and (min-width: 1200px) {
+    min-width: 322px;
+  }
 }
 .projects__after-title {
   @include font(16px, null, 1.86, null);
@@ -70,15 +98,13 @@
 }
 .project-card {
   transition: box-shadow 250ms var(--cubic);
-  display: flex;
-  flex-direction: column;
+
   &:focus,
   &:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
       1px 4px 6px rgba(0, 0, 0, 0.16);
   }
 }
-
 .overlay__card-text {
   position: absolute;
   left: 0;
