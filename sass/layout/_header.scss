@@ -1,0 +1,88 @@
+.header {
+  background-color: var(--third-color);
+  border-bottom: 1px solid #ececec;
+}
+.logo {
+  color: #000000;
+  font-family: Raleway;
+  @include font(26px, 700, 1.19, null);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.logo-color {
+  color: var(--accent-color);
+}
+.header-list,
+.header-connect,
+.header-container {
+  @extend %flex-items;
+}
+.header-connect {
+  @extend %flex-items;
+  margin-left: auto;
+}
+.header-connect__item:not(:last-child) {
+  margin-right: 30px;
+}
+.header-list__link {
+  color: var(--secondary-text-color);
+  @include font(null, 500, 1.14, 0.02em);
+  padding-top: 32px;
+  padding-bottom: 31px;
+  display: block;
+  transition: color 250ms var(--cubic);
+}
+.header-list__link {
+  position: relative;
+}
+.header-list__link.current {
+  &:after {
+    content: '';
+    width: 100%;
+    border-radius: 2px;
+    height: 4px;
+    background-color: var(--accent-color);
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+  }
+}
+.header-list__item:not(:last-child) {
+  margin-right: 50px;
+}
+.header__icon,
+.team-social__icon,
+.clients-list__icon,
+.footer-social__icon {
+  fill: currentColor;
+}
+.header__icon {
+  margin-right: 10px;
+}
+.header-connect__link {
+  color: var(--primary-text-color);
+  @include font(14px, 500, 1.14, 0.02em);
+  @extend %flex-items;
+  padding-top: 32px;
+  padding-bottom: 31px;
+  transition: color 250ms var(--cubic);
+}
+.header-list__link,
+.header-list__link,
+.header-connect__link,
+.header-connect__link,
+.contact__link,
+.contact__link,
+.address__link,
+.address__link,
+.our-clients__link,
+.our-clients__link {
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+.current {
+  color: var(--accent-color);
+}

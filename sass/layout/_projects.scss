@@ -1,0 +1,100 @@
+.projects {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.filters-list {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.filters-list__item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.filters-btn {
+  color: var(--secondary-text-color);
+  font-family: inherit;
+  @include font(16px, 500, 1.62, 0.03em);
+  background-color: #f5f4fa;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 6px 22px 6px 22px;
+  transition: background-color 250ms var(--cubic), color 250ms var(--cubic),
+    box-shadow 250ms var(--cubic);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--third-color);
+  }
+}
+.active-btn {
+  color: #ffffff;
+  background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * 30px);
+  margin-left: calc(-1 * 30px);
+}
+.projects-list__item {
+  flex-basis: calc(100% / 3 - 30px);
+  margin-left: 30px;
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+.projects__card-content {
+  flex-grow: 1;
+  padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  border-top: none;
+}
+.projects__title {
+  color: var(--secondary-text-color);
+  @include font(18px, 700, 2, 0.06em);
+  margin-bottom: 4px;
+}
+.projects__after-title {
+  @include font(16px, null, 1.86, null);
+}
+.project-card__thumb {
+  position: relative;
+  overflow: hidden;
+}
+.project-card {
+  transition: box-shadow 250ms var(--cubic);
+  display: flex;
+  flex-direction: column;
+  &:focus,
+  &:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.overlay__card-text {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #ffffff;
+  width: 100%;
+  height: 100%;
+  padding: 63px 24px;
+  background-color: rgba(33, 150, 243, 0.9);
+  @include font(18px, null, 1.56, null);
+  opacity: 0;
+  transition: transform 250ms var(--cubic), opacity 500ms var(--cubic);
+  transform: translateY(100%);
+  .project-card:focus,
+  .project-card:hover & {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

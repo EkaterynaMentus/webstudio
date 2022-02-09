@@ -1,0 +1,25 @@
+@import './utils/vars';
+@import './base/reset';
+@import './utils/placeholders';
+@import './utils/mixins';
+@import './base/common';
+@import './utils/hidden';
+
+// COMPONENTS
+
+@import './components/container';
+@import './components/modal';
+
+// LAYOUTS
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about-us';
+@import './layout/what-we-do';
+@import './layout/team';
+@import './layout/clients';
+@import './layout/projects';
+@import './layout/footer';
+@import './layout/address';
+@import './layout/socials';
+@import './layout/subscribe';
+@import './layout/developer';

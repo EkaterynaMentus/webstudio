@@ -1,0 +1,23 @@
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social__item {
+  & + & {
+    margin-left: 10px;
+  }
+}
+.footer-social__link {
+  width: 44px;
+  height: 44px;
+  background-color: rgba(255, 255, 255, 0.1);
+  @extend %flex-items;
+  justify-content: center;
+  border-radius: 50%;
+  color: var(--third-color);
+  transition: color 250ms var(--cubic), background-color 250ms var(--cubic);
+  &:focus,
+  &:hover {
+    background-color: var(--accent-color);
+  }
+}
