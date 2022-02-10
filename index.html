@@ -62,12 +62,12 @@
     <!--Main content-->
     <main>
       <!--Hero-->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="hero-container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero-btn" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
       <!--About us-->
       <section class="about-us">
         <div class="container">
@@ -163,7 +163,29 @@
           <h2 class="our-team__title">Наша команда</h2>
           <ul class="list team-list">
             <li class="team-list__item">
-              <img src="./images/worker-1.jpg" alt="Игорь Демьяненко" width="270" height="260" />
+              <picture>
+                <source srcset="./images/worker-1.jpg 1x,
+              ./images/worker-1-2x.jpg 2x"
+              src="./images/worker-1.jpg" 
+              @media="min-width: 1200px">
+              <source srcset="./images/worker-1-tab-1x.jpg 1x,
+              ./images/worker-1-tab-2x.jpg 2x"
+              src="./images/worker-1.jpg" 
+              @media="min-width: 768px">
+              <source srcset="./images/worker-1-mob-1x.jpg 1x,
+              ./images/worker-1-mob-2x.jpg 2x"
+              src="./images/worker-1.jpg" 
+              @media="min-width: 480px">
+              
+              <img 
+              src="./images/worker-1.jpg" 
+              alt="Игорь Демьяненко" />
+              </picture>
+              <!-- <img 
+              srcset="./images/worker-1.jpg 1x,
+              ./images/worker-1-2x.jpg 2x"
+              src="./images/worker-1.jpg" 
+              alt="Игорь Демьяненко" width="270" height="260" /> -->
               <div class="team-item-content">
                 <h3 class="team__name-title">Игорь Демьяненко</h3>
                 <p lang="en" class="team__after-name">Product Designer</p>
@@ -200,7 +222,26 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/worker-2.jpg" alt="Ольга Репина" width="270" height="260" />
+              <picture>
+                <source srcset="./images/worker-2.jpg 1x,
+              ./images/worker-2-2x.jpg 2x"
+              src="./images/worker-2.jpg" 
+              @media="min-width: 1200px">
+              <source srcset="./images/worker-2-tab-1x.jpg 1x,
+              ./images/worker-2-tab-2x.jpg 2x"
+              src="./images/worker-2.jpg" 
+              @media="min-width: 768px">
+              <source srcset="./images/worker-2-mob-1x.jpg 1x,
+              ./images/worker-2-mob-2x.jpg 2x"
+              src="./images/worker-2.jpg" 
+              @media="min-width: 480px">
+              
+              <img 
+              src="./images/worker-2.jpg" 
+              alt="Ольга Репина" />
+              </picture>
+              <!-- <img src="./images/worker-2.jpg" 
+                alt="Ольга Репина" width="270" height="260" /> -->
               <div class="team-item-content">
                 <h3 class="team__name-title">Ольга Репина</h3>
                 <p lang="en" class="team__after-name">Frontend Developer</p>
@@ -237,7 +278,26 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/worker-3.jpg" alt="Николай Тарасов" width="270" height="260" />
+              <picture>
+                <source srcset="./images/worker-3.jpg 1x,
+              ./images/worker-3-2x.jpg 2x"
+              src="./images/worker-3.jpg" 
+              @media="min-width: 1200px">
+              <source srcset="./images/worker-3-tab-1x.jpg 1x,
+              ./images/worker-3-tab-2x.jpg 2x"
+              src="./images/worker-3.jpg" 
+              @media="min-width: 768px">
+              <source srcset="./images/worker-3-mob-1x.jpg 1x,
+              ./images/worker-3-mob-2x.jpg 2x"
+              src="./images/worker-3.jpg" 
+              @media="min-width: 480px">
+              
+              <img 
+              src="./images/worker-3.jpg" 
+              alt="Николай Тарасов" />
+              </picture>
+              <!-- <img src="./images/worker-3.jpg" 
+              alt="Николай Тарасов" width="270" height="260" /> -->
               <div class="team-item-content">
                 <h3 class="team__name-title">Николай Тарасов</h3>
                 <p lang="en" class="team__after-name">Marketing</p>
@@ -274,7 +334,26 @@
               </div>
             </li>
             <li class="team-list__item">
-              <img src="./images/worker-4.jpg" alt="Михаил Ермаков" width="270" height="260" />
+              <picture>
+                <source srcset="./images/worker-4.jpg 1x,
+              ./images/worker-4-2x.jpg 2x"
+              src="./images/worker-4.jpg" 
+              @media="min-width: 1200px">
+              <source srcset="./images/worker-4-tab-1x.jpg 1x,
+              ./images/worker-4-tab-2x.jpg 2x"
+              src="./images/worker-4.jpg" 
+              @media="min-width: 768px">
+              <source srcset="./images/worker-4-mob-1x.jpg 1x,
+              ./images/worker-4-mob-2x.jpg 2x"
+              src="./images/worker-4.jpg" 
+              @media="min-width: 480px">
+              
+              <img 
+              src="./images/worker-4.jpg" 
+              alt="Михаил Ермаков" />
+              </picture>
+              <!-- <img src="./images/worker-4.jpg" 
+              alt="Михаил Ермаков" width="270" height="260" /> -->
               <div class="team-item-content">
                 <h3 class="team__name-title">Михаил Ермаков</h3>
                 <p lang="en" class="team__after-name">UI Designer</p>
@@ -446,9 +525,11 @@
     </div>
     </footer> -->
     <!--Developer info-->
-    <div class="developer-inf">
-      <p class="developer-inf__text">2022 Developed by Ekaterina Mentus</p>
-    </div>
+    <section class="developer-inf">
+      <div class="container">
+        <p class="developer-inf__text">2022 Developed by Ekaterina Mentus</p>
+      </div>
+    </section>
       <!--Modal-->  
     <div class="backdrop is-hidden" data-modal>
       <div class="modal ">
