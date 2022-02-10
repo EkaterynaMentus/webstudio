@@ -395,28 +395,69 @@ body {
 }
 
 .hero-container {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/back-groung-image.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-1x.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   margin: 0 auto;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-mob-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-tab-2x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-container {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-1x.jpg);
+  }
+}
+
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero-container {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-2x.jpg);
+  }
+}
+
 .hero__title {
-  font-size: 44px;
+  font-size: 26px;
   font-weight: 900;
-  line-height: 1.36;
+  line-height: 1.6;
   letter-spacing: 0.06em;
   color: var(--third-color);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
-  max-width: 696px;
+  max-width: 360px;
   margin-right: auto;
   margin-left: auto;
+}
+
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-size: 44px;
+    font-weight: 900;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    max-width: 696px;
+  }
 }
 
 .hero-btn {
