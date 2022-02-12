@@ -23,7 +23,7 @@
   </head>
   <body>
     <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="link logo" href="./index.html" lang="en"
           ><span class="logo-color">Web</span>Studio</a
@@ -45,8 +45,7 @@
               <svg class="header__icon" width="16" height="12">
                 <use href="images/icons.svg#icon-envelope"></use>
               </svg>
-              info@devstudio.com</a
-            >
+              info@devstudio.com</a>
           </li>
           <li class="header-connect__item">
             <a class="link header-connect__link" href="tel:+380961111111">
@@ -57,8 +56,65 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn " data-menu-open>
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
       </div>
-    </header> -->
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+        <button type="button" class="menu-close-btn"  data-menu-close>
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close"></use>
+          </svg>
+        </button>
+        <ul class="list mob-menu-list">
+            <li class="mob-menu-list__item">
+              <a class="link mob-menu-list__link current-link" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="link mob-menu-list__link" href="./portfolio.html">Портфолио</a>
+            </li>
+            <li class="mob-menu-list__item">
+              <a class="link mob-menu-list__link" href="./portfolio.html">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="mob-menu-bottom">
+        <ul class="mob-connect list">
+          <li class="mob-connect__item">
+            <a class="link mob-connect__link current-link" href="tel:+380961111111">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="mob-connect__item">
+            <a class="link mob-connect__link " href="mailto:info@devstudio.com">
+              info@devstudio.com</a>
+          </li>
+        </ul> 
+        <ul class="list menu-social">
+                  <li class="menu-social__item">
+                    <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                      Instagram</a>
+                  </li>
+                  <li class="menu-social__item">
+                    <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                      Twitter</a>
+                  </li>
+                  <li class="menu-social__item">
+                    <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                      Facebook</a>
+                  </li>
+                  <li class="menu-social__item">
+                    <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                      LinkedIn</a>
+                  </li>
+                </ul>
+      </div>
+      </div>
+      </div>
+    </header>
     <!--Main content-->
     <main>
       <!--Hero-->
@@ -121,7 +177,7 @@
         </div>
       </section>
       <!--What we do-->
-      <!-- <section class="we-do">
+      <section class="we-do">
         <div class="container">
           <h2 class="we-do__title">Чем мы занимаемся</h2>
           <ul class="list we-do-list">
@@ -150,13 +206,13 @@
             <li class="we-do-list__item">
               <div></div>
               <img src="./images/work-example-3.jpg" alt="пример работы" width="370" height="294" />
-                <h3 class="we-do-after__title">Дизайнерские решения</h3>
+                <h3 class="we-do__after-title">Дизайнерские решения</h3>
               </div>
             </li>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!--Our team-->
       <section class="team">
         <div class="container">
@@ -445,7 +501,7 @@
       </section>
     </main>
     <!--Footer-->
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-adreess">
           <a class="link logo-footer" href="./index.html" lang="en"
@@ -523,7 +579,7 @@
             </form>
       </div>
     </div>
-    </footer> -->
+    </footer>
     <!--Developer info-->
     <section class="developer-inf">
       <div class="container">
@@ -602,5 +658,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

@@ -1,3 +1,18 @@
+// @media screen and (min-width: 480px) {
+//   .we-do {
+//     display: none;
+//   }
+// }
+// @media screen and (min-width: 768px) {
+//   .we-do {
+//     display: none;
+//   }
+// }
+@media screen and (max-width: 1200px) {
+  .we-do {
+    display: none;
+  }
+}
 .we-do {
   padding-bottom: 94px;
 }

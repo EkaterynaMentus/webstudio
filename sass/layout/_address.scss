@@ -2,9 +2,15 @@
   color: var(--third-color);
   font-style: normal;
 }
-.address__item:not(:last-child) {
-  margin-bottom: 9px;
+@media screen and (max-width: 1200px) {
+  .address__item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
+.address__item:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .address__item,
 .contact__link {
   @include font(14px, 400, 1.71, null);
@@ -18,4 +24,5 @@
   text-transform: uppercase;
   color: var(--third-color);
   margin-bottom: 20px;
+  display: block;
 }

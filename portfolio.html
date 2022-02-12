@@ -22,7 +22,7 @@
   </head>
   <body>
     <!--Header-->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a class="link logo" href="./index.html" lang="en"
           ><span class="logo-color">Web</span>Studio</a
@@ -30,12 +30,14 @@
         <nav class="header-nav">
           <ul class="list header-list">
             <li class="header-list__item">
-              <a class="link header-list__link " href="./index.html">Студия</a>
+              <a class="link header-list__link" href="./index.html">Студия</a>
             </li>
             <li class="header-list__item">
               <a class="link header-list__link current" href="./portfolio.html">Портфолио</a>
             </li>
-            <li class="header-list__item"><a class="link header-list__link" href="">Контакты</a></li>
+            <li class="header-list__item">
+              <a class="link header-list__link" href="">Контакты</a>
+            </li>
           </ul>
         </nav>
         <ul class="header-connect list">
@@ -56,9 +58,73 @@
             >
           </li>
         </ul>
+        <button type="button" class="menu-open-btn" data-menu-open>
+          <svg class="menu__icon" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="container">
+          <div class="mob-menu-top">
+            <button type="button" class="menu-close-btn" data-menu-close>
+              <svg class="menu__icon" width="40" height="40">
+                <use href="./images/icons.svg#icon-menu-close"></use>
+              </svg>
+            </button>
+            <ul class="list mob-menu-list">
+              <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link" href="./index.html">Студия</a>
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link current-link" href="./portfolio.html"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mob-menu-list__item">
+                <a class="link mob-menu-list__link" href="./portfolio.html">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div class="mob-menu-bottom">
+            <ul class="mob-connect list">
+              <li class="mob-connect__item">
+                <a class="link mob-connect__link current-link" href="tel:+380961111111">
+                  +38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-connect__item">
+                <a class="link mob-connect__link" href="mailto:info@devstudio.com">
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+            <ul class="list menu-social">
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                  Instagram</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                  Twitter</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                  Facebook</a
+                >
+              </li>
+              <li class="menu-social__item">
+                <a href="" class="menu-social__link" target="_blank" rel="noopener noreferrer">
+                  LinkedIn</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
-    </header> -->
     <main>
       <!--Projects-->
       <section class="projects">
@@ -107,7 +173,6 @@
                       src="./images/portfolio-ex-1.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-1.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -153,7 +218,6 @@
                       src="./images/portfolio-ex-2.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-2.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -199,7 +263,6 @@
                       src="./images/portfolio-ex-3.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-3.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -245,7 +308,6 @@
                       src="./images/portfolio-ex-4.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-4.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -291,7 +353,6 @@
                       src="./images/portfolio-ex-5.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-5.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -337,7 +398,6 @@
                       src="./images/portfolio-ex-6.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-6.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -383,7 +443,6 @@
                       src="./images/portfolio-ex-7.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-7.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -429,7 +488,6 @@
                       src="./images/portfolio-ex-8.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-8.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -475,7 +533,6 @@
                       src="./images/portfolio-ex-9.jpg"
                       @media="min-width: 480px"
                     />
-
                     <img src="./images/portfolio-ex-9.jpg" alt="Пример работы" />
                   </picture>
                   <!-- <img
@@ -501,7 +558,7 @@
       </section>
     </main>
     <!--Footer-->
-    <!-- <footer class="footer-section">
+    <footer class="footer-section">
       <div class="container footer-container">
         <div class="footer-adreess">
           <a class="link logo-footer" href="./index.html" lang="en"
@@ -580,12 +637,13 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <!--Developer info-->
     <section class="developer-inf">
       <div class="container">
         <p class="developer-inf__text">2022 Developed by Ekaterina Mentus</p>
       </div>
     </section>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
