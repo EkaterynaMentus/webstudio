@@ -342,7 +342,7 @@ body {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .header-connect__item:not(:last-child) {
     margin-right: 30px;
   }
