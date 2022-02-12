@@ -33,7 +33,6 @@ img {
 }
 
 .checkbox-field, .header-list,
-.header-connect,
 .header-container, .about-us-image, .team-social__link, .clients-list__link, .footer-social__link {
   align-items: center;
   display: flex;
@@ -329,14 +328,24 @@ body {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .header-connect {
+    margin-left: auto;
+    flex-direction: row;
+    display: flex;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .header-connect {
     display: none;
   }
 }
 
-.header-connect__item:not(:last-child) {
-  margin-right: 30px;
+@media screen and (max-width: 768px) {
+  .header-connect__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) {
