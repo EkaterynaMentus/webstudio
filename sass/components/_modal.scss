@@ -116,7 +116,10 @@
 }
 
 .check__text {
-  @include font(14px, null, 1.7, null);
+  @include font(12px, null, 1.16, null);
+  @media screen and (min-width: 1200px) {
+    @include font(14px, null, 1.7, null);
+  }
   color: #757575;
   display: flex;
   text-align: center;

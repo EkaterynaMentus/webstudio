@@ -231,11 +231,18 @@ body {
 }
 
 .check__text {
-  font-size: 14px;
-  line-height: 1.7;
+  font-size: 12px;
+  line-height: 1.16;
   color: #757575;
   display: flex;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .check__text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
 }
 
 .check__text::before {
@@ -906,6 +913,7 @@ body {
   .our-clients {
     padding-top: 50px;
     padding-bottom: 94px;
+    margin-bottom: 0px;
   }
 }
 
@@ -1039,6 +1047,7 @@ body {
   .projects-list {
     display: flex;
     flex-wrap: wrap;
+    margin: calc(-1 * 30px / 2);
   }
 }
 
@@ -1049,14 +1058,15 @@ body {
 
 @media screen and (min-width: 768px) {
   .projects-list__item {
+    margin: calc(30px / 2);
     width: calc(100% / 2 - 30px);
-    margin-left: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .projects-list__item {
     width: calc(100% / 3 - 30px);
+    margin: calc(30px / 2);
   }
 }
 
@@ -1161,6 +1171,7 @@ body {
 @media screen and (min-width: 1200px) {
   .footer-social {
     margin-left: 0px;
+    text-align: left;
   }
 }
 
@@ -1287,6 +1298,7 @@ body {
   .subscribe {
     margin-left: 0px;
     margin-right: 0px;
+    text-align: left;
   }
 }
 

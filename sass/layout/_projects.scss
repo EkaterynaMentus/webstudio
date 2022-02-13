@@ -59,17 +59,20 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin: calc(-1 * 30px / 2);
   }
 }
 
 .projects-list__item {
   margin-bottom: 30px;
   @media screen and (min-width: 768px) {
+    margin: calc(30px / 2);
     width: calc(100% / 2 - 30px);
-    margin-left: 30px;
+    // margin-left: 30px;
   }
   @media screen and (min-width: 1200px) {
     width: calc(100% / 3 - 30px);
+    margin: calc(30px / 2);
   }
   background-color: #ffffff;
 }
